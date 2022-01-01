@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./MainPageItems.module.css";
 import NavBar from "./NavBar";
+import { Link } from "react-router-dom";
 const MainPage = (props) => {
   const [foodBackground, setFoodBackground] = useState(false);
   const [drinkBackground, setDrinkBackground] = useState(false);
@@ -35,31 +36,40 @@ const MainPage = (props) => {
       <NavBar></NavBar>
       <div className={classes.container}>
         <div className={classes.address}>
-          <p>123 Fake Street — Seattle, WA — 206-555-7890</p>
+          <p >123 Fake Street — Seattle, WA — 206-555-7890</p>
         </div>
-        <div className={classes.lists}>
-          <div
+        <span className={classes.lists}>
+          <span
             onMouseEnter={addBackgroundChangeHandler}
             onMouseLeave={removeBackgroundChangeHandler}
             className="foodOption"
           >
-            EAT
-          </div>
-          <div
+            <Link to="/menu" className="foodOption">
+              {" "}
+              EAT{" "}
+            </Link>
+          </span>
+          <span
             onMouseEnter={addBackgroundChangeHandler}
             onMouseLeave={removeBackgroundChangeHandler}
             className="drinkOption"
           >
-            DRINK
-          </div>
-          <div
+            <Link to="/menu" className="drinkOption">
+              {" "}
+              DRINK{" "}
+            </Link>
+          </span>
+          <span
             onMouseEnter={addBackgroundChangeHandler}
             onMouseLeave={removeBackgroundChangeHandler}
             className="visitOption"
           >
-            VISIT
-          </div>
-        </div>
+            <Link to="/visit" className="visitOption">
+              {" "}
+              VISIT
+            </Link>
+          </span>
+        </span>
       </div>
     </div>
   );

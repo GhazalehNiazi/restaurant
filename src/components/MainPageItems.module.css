@@ -3,13 +3,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "PT Serif", serif;
-  transition: all 0.3s;
 }
 .MainPage {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
+  opacity: 0.95;
+  transition: background-image 0.3s ease-in;
 }
 
 .container{
@@ -29,22 +30,39 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 3.8rem;
+  font-size: 4.2rem;
+}
+.address p{
+font-size: 1.3rem;
+color:rgb(255, 255, 255)
+}
+span a{
+  text-decoration: none;
+  color :rgb(252, 252, 252);
+  padding: 0 2rem;
+  transition: all 0.3s ease-in;
+}
+span a:hover{
+  color: rgb(212, 108, 39);
 }
 
 .mainActive {
   background-image: url(../image/theMainPicture.jpg);
+  opacity: 0.95;
   transition: background-image 2s ease-out;
 }
 .foodActive {
   background-image: url(../image/foodPicture.jpg);
+  opacity: 0.95;
   transition: all 0.3s;
 }
 .drinkActive {
   background-image: url(../image/drinkPicture.jpg);
+  opacity: 0.95;
   transition: all 0.3s;
 }
 .visitActive {
+  opacity: 0.95;
   background-image: url(../image/visitPicture.jpg);
   transition: all 0.3s;
 }

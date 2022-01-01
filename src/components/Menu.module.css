@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+    background-image: url(../image/menuBackground\ \(2\).jpg);
+    background-color: rgba(48, 41, 43, 0.664);
+    background-blend-mode:multiply;
+    background-attachment: scroll;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}

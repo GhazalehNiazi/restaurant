@@ -3,7 +3,7 @@
   position: fixed;
   right: 0;
   padding: 3vw 0;
- font-weight: 400;
+  font-weight: 400;
   text-decoration: none;
   cursor: pointer;
 }
@@ -19,9 +19,9 @@
   color: #f5f5f5;
 }
 
-.navContainer li:hover{
+.navContainer li:hover {
   color: rgb(231, 139, 18);
 }
-.navContainer li a:hover{
+.navContainer li a:hover {
   color: rgb(231, 139, 18);
 }

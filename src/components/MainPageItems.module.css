@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  transition: all 0.3s;
+}
+.MainPage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  height: 90vh;
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(252, 252, 252);
+  font-size: 3.8rem;
+}
+
+.mainActive {
+  background-image: url(../image/theMainPicture.jpg);
+  transition: background-image 2s ease-out;
+}
+.foodActive {
+  background-image: url(../image/foodPicture.jpg);
+  transition: all 0.3s;
+}
+.drinkActive {
+  background-image: url(../image/drinkPicture.jpg);
+  transition: all 0.3s;
+}
+.visitActive {
+  background-image: url(../image/visitPicture.jpg);
+  transition: all 0.3s;
+}

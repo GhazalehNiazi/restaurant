@@ -1,20 +1,28 @@
 import React from "react";
-import classes from './NavBar.module.css'
-const NavBar = props =>{
-
-return(
+import classes from "./NavBar.module.css";
+import { Link } from "react-router-dom";
+const NavBar = (props) => {
+  return (
     <React.Fragment>
-        <nav>
-            <ul className={classes.navContainer}>
-                <li className={classes.navItem}>Order now</li>
-                <li className={classes.navItem}>Home</li>
-                <li className={classes.navItem}>Gallery</li>
-                <li className={classes.navItem}>Visit</li>
-                <li className={classes.navItem}>icon</li>
-                <li className={classes.navItem}>icon</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul className={classes.navContainer}>
+          <li>
+            <Link to="/menu">Order now</Link>
+          </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/gallery">gallery</Link>
+          </li>
+          <li>
+            <Link to="/visit">visit</Link>
+          </li>
+          <li>icon</li>
+          <li>icon</li>
+        </ul>
+      </nav>
     </React.Fragment>
-)
-}
+  );
+};
 export default NavBar;

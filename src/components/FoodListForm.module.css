@@ -1,0 +1,25 @@
+input{
+    border: none;
+    border-radius: 50;
+    }
+    .buttons{
+        margin: 0;
+    }
+    
+    .buttons button{
+        width: 2.5rem;
+        
+        background-color: rgb(189, 64, 15);
+        border: none;
+        margin: 0;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+    }
+    .buttons button:hover{
+        background-color: rgb(180, 58, 28);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width:50%
+    }

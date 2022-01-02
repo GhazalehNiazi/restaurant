@@ -6,7 +6,7 @@ const FoodList = (props) => {
   return (
     <div className={classes.foodDetail}>
       <div className={classes.columnOne}>
-        <a>Food Name</a>
+        <a >Food Name</a>
         <p>food detail dfnkgldn</p>
       </div>
       <div className={classes.columnOne}>

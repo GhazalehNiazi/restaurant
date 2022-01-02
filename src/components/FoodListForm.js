@@ -6,7 +6,7 @@ const FoodItemForm = () => {
       <input id="amount" type="number" step='1' defaultValue='1' min="0" max="6" />
       <div className={classes.buttons}>
         <button>+</button>
-        <button>-</button>
+        {/* <button>-</button> */}
       </div>
     </form>
   );

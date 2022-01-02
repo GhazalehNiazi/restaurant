@@ -7,16 +7,16 @@ input{
     }
     
     .buttons button{
-        width: 2.5rem;
-        
+        width: 100%;
         background-color: rgb(189, 64, 15);
         border: none;
         margin: 0;
         cursor: pointer;
         transition: all 0.2s ease-in;
+        padding:0.07rem 1rem;
     }
     .buttons button:hover{
-        background-color: rgb(180, 58, 28);
+        background-color: rgb(150, 42, 9);
     }
     form{
         display: flex;

@@ -1,6 +1,7 @@
 import FoodList from "./FoodList";
 import classes from "./Menu.module.css";
 import AvailableFood from "./AvailableFood";
+import Cart from "./Cart";
 
 const Menu = () => {
   const mealsName = AvailableFood.map((meal) => (
@@ -14,7 +15,8 @@ const Menu = () => {
   ));
   return (
     <div className={classes.container}>
-      {mealsName}
+      <Cart />
+      <div className={classes.meals}> {mealsName}</div>
     </div>
   );
 };

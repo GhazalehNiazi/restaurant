@@ -3,9 +3,15 @@
   overflow-x: hidden;
 }
 
+.meals{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
 .container {
     background-image: url(../image/menuBackground\ \(2\).jpg);
-    background-color: rgba(48, 41, 43, 0.664);
+    background-color: rgb(102, 100, 101);
+    /* opacity: 0.9; */
     background-blend-mode:multiply;
     background-attachment: scroll;
     width: 100vw;
@@ -14,7 +20,5 @@
     background-repeat: no-repeat;
     background-size:cover;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-
+    grid-template-columns: 1fr 5fr ;
 }

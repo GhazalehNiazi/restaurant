@@ -1,13 +1,14 @@
 import React from "react";
 import MainPage from "./components/MainPage";
 import NavBar from "./components/NavBar";
+import CartProvider from "./store/CartProvider";
 function App() {
   return (
-    <React.Fragment>
+    <CartProvider>
       <MainPage>
         <NavBar></NavBar>
       </MainPage>
-    </React.Fragment>
+    </CartProvider>
   );
 }
 

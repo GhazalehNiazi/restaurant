@@ -3,16 +3,17 @@ import { Link } from "react-router-dom";
 import classes from './FoodList.module.css'
 import img from '../image/foodImage.jpg'
 const FoodList = (props) => {
+  const price = `$${props.price.toFixed(2)}`
   return (
     <div className={classes.foodDetail}>
       <div className={classes.columnOne}>
-        <a >Food Name</a>
-        <p>food detail dfnkgldn</p>
+        <a >{props.name}</a>
+        <p className={classes.description}>{props.description}</p>
       </div>
       <div className={classes.columnOne}>
-        <div>price</div>
+        <div>{price}</div>
         <form>
-          <input type='number' value='1'></input>
+          <input type='number' min='0' max='6'></input>
         <div className={classes.buttons}>
           <button>+</button>
           <button>-</button>
@@ -20,7 +21,7 @@ const FoodList = (props) => {
         </form>
       </div>
       <div className={classes.img}>
-      <img src={img} ></img>
+      <img src={props.photo} ></img>
       </div>
     </div>
   );

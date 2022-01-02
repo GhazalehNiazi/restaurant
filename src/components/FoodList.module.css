@@ -6,23 +6,29 @@
    
 }
 .foodDetail{
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     /* width:60%; */
     font-size: 1.4rem;
-    margin: 3rem;
+    /* margin: 3rem; */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
-
+.description{
+    font-size: 0.7rem;
+}
 .buttons{
     margin:auto;
 
 }
 .columnOne{
-   margin: auto;
+   /* margin: auto; */
 
 }
 .columnTwo{
-    margin: auto;
+    /* margin: auto; */
 }
 input{
 border: none;
@@ -54,6 +60,6 @@ form{
     padding-top: 5%;
 }
 .img img{
-    width:45%;
-    height:45%;
+    width:80%;
+    height:80%;
 }

@@ -3,7 +3,9 @@ import CartContext from "../store/cart-context";
 import classes from "./Cart.module.css";
 
 const Cart = (props) => {
+  // console.log(CartContext.items);
   const context = useContext(CartContext);
+  console.log('dddddddddd0',context);
 
   return (
     <div className={classes.container}>

@@ -15,6 +15,7 @@ const GlobalState = (props)=>{
     return(
         <CartContext.Provider value={
             {
+                items:cartState.items,
                 product:products,
                 cart: cartState.cart, //cart state is undefined!!! //it should be cartState.cart but it doesn't work
                 addProductToCart:addProductToCart,

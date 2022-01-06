@@ -1,24 +1,38 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
 import FoodListForm from "./FoodListForm";
 import classes from "./FoodList.module.css";
-import img from "../image/foodImage.jpg";
+import CartContext from "../store/cart-context";
+
 const FoodList = (props) => {
+  const cartCtx = useContext(CartContext);
   const price = `$${props.price.toFixed(2)}`;
+
+  const addToCartHandler = (amount) => {
+
+    cartCtx.addProductToCart({
+      id: props.id,
+      name: props.name,
+      amount: amount,
+      price: props.price,
+    });
+   console.log(props.id); // id is being passes
+  };
+
+
   return (
     <div className={classes.foodDetail}>
       <div className={classes.columnOne}>
-        <a>{props.name}</a>
+        <p>{props.name}</p>
         <p className={classes.description}>{props.description}</p>
       </div>
       <div className={classes.columnOne}>
         <div>{price}</div>
         <div>
-          <FoodListForm></FoodListForm>
+          <FoodListForm id={props.id} onAddToCart={addToCartHandler}></FoodListForm>
         </div>
       </div>
       <div className={classes.img}>
-        <img src={props.photo}></img>
+        <img src={props.photo} alt=''></img>
       </div>
     </div>
   );

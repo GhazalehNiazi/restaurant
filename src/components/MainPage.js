@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import MainPageItems from './MainPageItems'
-import NavBar from "./NavBar";
 // import classes from "./MainPage.module.css";
 const MainPage = (props) => {
 return(

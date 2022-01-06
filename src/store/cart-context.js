@@ -1,9 +1,10 @@
 import React from "react";
+import AvailableFood from "../components/AvailableFood";
 
-const CartContext = React.createContext({
-  items: [],
+export default React.createContext({
+  items: AvailableFood,
   totalAmount: 0,
-  addItem: (item) => {},
+  cart: [],
+  addProductToCart: (item) => {},
   removeItem: (id) => {},
 });
-export default CartContext;

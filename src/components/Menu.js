@@ -4,9 +4,11 @@ import AvailableFood from "./AvailableFood";
 import Cart from "./Cart";
 
 const Menu = () => {
+  // printing the AvailableFood in the menu and passing the props to the FoodList
   const mealsName = AvailableFood.map((meal) => (
     <FoodList
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}

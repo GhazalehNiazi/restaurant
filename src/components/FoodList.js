@@ -15,7 +15,6 @@ const FoodList = (props) => {
       amount: amount,
       price: props.price,
     });
-   console.log(props.id); // id is being passes
   };
 
 

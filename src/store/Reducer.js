@@ -1,41 +1,42 @@
 export const ADD = "ADD";
 
 const addProductToCart = (state, action) => {
-  console.log("addProductCart from reducer");
-  console.log('state:',state);
-  console.log('action', action);
-  console.log(state.cart, state); // product is undefined!
-console.log(state.items);
-  // const updatedCart = [...state.cart];
-  // console.log(updatedCart); //not updated!
-  // const updatedItemIndex = updatedCart.findIndex(
-  //   (item) => item.id === product.id
-  // );
-  // if (updatedItemIndex < 0) {
-  //   updatedCart.push({ ...product, quantity: 1 });
-  // } else {
-  //   const updatedItem = { ...updatedCart[updatedItemIndex] };
-  //   updatedItem.quantity++;
-  //   updatedCart[updatedItemIndex] = updatedItem;
-  // }
+  console.log("state:", state);
+  console.log("action", action);
 
-  // return { ...state, cart: updatedCart };
-  const updatedItems = state.cart.concat(action.item);
-  console.log('updatedItems',updatedItems);
+  // it updates the total price of the cart
   const updatedTotalAmount =
     state.totalAmount + action.item.price * action.item.amount;
-    return{
-      cart: updatedItems,
-      totalAmount: updatedTotalAmount,
-    }
+
+  // it checks if the items that is being added to the cart already exists or not(and returns the index of it)
+  const existingCartItemIndex = state.cart.findIndex(
+    (item) => item.id === action.item.id
+  );
+// it gives the full item obj
+  const existingCartItem = state.cart[existingCartItemIndex];
+  let updatedItems;
+
+  if (existingCartItem) {
+    const updatedItem = {
+      ...existingCartItem,
+      amount: existingCartItem.amount + action.item.amount,
+    };
+    updatedItems = [...state.cart];
+    updatedItems[existingCartItemIndex] = updatedItem;
+  } else {
+    updatedItems = state.cart.concat(action.item);
+  }
+
+  return {
+    cart: updatedItems,
+    totalAmount: updatedTotalAmount,
+  };
 };
 
 export const shopReducer = (state, action) => {
   switch (action.type) {
     case ADD:
       return addProductToCart(state, action);
-    // console.log('shopreducer switch')  it works!
-    // console.log(state,action);
     default:
       return state;
   }

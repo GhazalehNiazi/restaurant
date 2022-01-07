@@ -1,23 +1,20 @@
 import { useContext } from "react";
+import cartContext from "../store/cart-context";
 import CartContext from "../store/cart-context";
 import classes from "./Cart.module.css";
 
 const Cart = (props) => {
-  // console.log(CartContext.items);
   const context = useContext(CartContext);
-  console.log('dddddddddd0',context);
-
+  const contextCart = context.cart;
   return (
     <div className={classes.container}>
-      <h1>text text</h1>
+     {/* {!contextCart && <div>cart is empty</div>} */}
       <ul>
-        {context.cart.map((cartItem) => (
+        {contextCart.map((cartItem) => (
           <li key={cartItem.id}>  
-             {/* //the key is being added but  it error says add a key! FoodList.js line 13*/}
-
             <div>
-              <strong>{cartItem.name}</strong> - ${cartItem.price} (
-              {cartItem.quantity})
+              <strong>{cartItem.name}</strong> - ${cartItem.price * cartItem.amount} (
+                {cartItem.amount})
             </div>
             <div>
               <button
@@ -30,8 +27,10 @@ const Cart = (props) => {
               </button>
             </div>
           </li>
-        ))}
+        ))
+        }
       </ul>
+      <div>total amount : ${context.totalAmount.toFixed(2)}</div>
     </div>
   );
 };

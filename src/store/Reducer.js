@@ -12,7 +12,7 @@ const addProductToCart = (state, action) => {
   const existingCartItemIndex = state.cart.findIndex(
     (item) => item.id === action.item.id
   );
-// it gives the full item obj
+  // it gives the full item obj
   const existingCartItem = state.cart[existingCartItemIndex];
   let updatedItems;
 
@@ -33,10 +33,39 @@ const addProductToCart = (state, action) => {
   };
 };
 
+const removeItem = (state, action) => {
+  console.log("cart", state.cart);
+  console.log("action", action);
+  const findIndexItem = state.cart.findIndex((item) => item.id === action.id);
+  const chosenItem = state.cart[findIndexItem];
+  chosenItem.amount--;
+  let updatedCart;
+  if (chosenItem.amount>0) {
+    console.log('upper 0');
+    const updatedItem = {
+      ...chosenItem,
+      amount: chosenItem.amount,
+    };
+    updatedCart = [...state.cart];
+    updatedCart[findIndexItem] = updatedItem;
+  } else {
+    console.log('under 0');
+    updatedCart = state.cart.filter(el=>el.id !== findIndexItem); // it does't work
+  }
+  console.log(updatedCart);
+  const updatedTotalAmount = state.totalAmount - chosenItem.price;
+  return {
+    cart: updatedCart,
+    totalAmount: updatedTotalAmount,
+  };
+};
+
 export const shopReducer = (state, action) => {
   switch (action.type) {
     case ADD:
       return addProductToCart(state, action);
+    case "REMOVE":
+      return removeItem(state, action);
     default:
       return state;
   }

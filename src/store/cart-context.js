@@ -1,5 +1,4 @@
 import React from "react";
-import AvailableFood from "../components/AvailableFood";
 
 export default React.createContext({
   totalAmount: 0,

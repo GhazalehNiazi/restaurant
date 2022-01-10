@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 2rem;
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-size: 1.2rem;
+}
+.price span {
+  font-size: 1rem;
+  color: gray;
+}
+/* button{
+   background-color: rgb(224, 80, 22);
+   border: none;
+   cursor: pointer;
+   transition: all 0.2s ease-in;
+   padding:0.7rem 1rem;
+}
+button:hover{
+   background-color: rgb(150, 42, 9);
+} */
+
+.totalAmount {
+    color:rgb(243, 240, 240);
+    font-size: 1.4rem;;
+    padding-top: 2rem;
+  padding-left: inherit;
+  align-self: flex-start;
+}

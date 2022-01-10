@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgba(150, 95, 50, 0.603);
+    margin: auto;
+    width: 50vw;
+    height: 80vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    background-color: rgb(192, 95, 17);
+    margin:1rem 0.5rem 0 0.5rem;
+    width:6rem;
+}
+.buttons:hover{
+    background-color: rgb(150, 95, 50);
+}

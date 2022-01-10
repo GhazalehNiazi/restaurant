@@ -17,6 +17,7 @@ const addProductToCart = (state, action) => {
   let updatedItems;
 
   if (existingCartItem) {
+    // it updates the item in cart if the amount is upper than 0
     const updatedItem = {
       ...existingCartItem,
       amount: existingCartItem.amount + action.item.amount,
@@ -24,6 +25,7 @@ const addProductToCart = (state, action) => {
     updatedItems = [...state.cart];
     updatedItems[existingCartItemIndex] = updatedItem;
   } else {
+    // it adds a new item to the cart if the amount is 0
     updatedItems = state.cart.concat(action.item);
   }
 
@@ -36,13 +38,18 @@ const addProductToCart = (state, action) => {
 const removeItem = (state, action) => {
   console.log("cart", state.cart);
   console.log("action", action);
+  // it findes the index of the chosen item
   const findIndexItem = state.cart.findIndex((item) => item.id === action.id);
+  // it findes the chosen item itself
   const chosenItem = state.cart[findIndexItem];
+  //updating the cart total price
   const updatedTotalAmount = state.totalAmount - chosenItem.price;
+  // applying the change it the item amount
   chosenItem.amount--;
   let updatedCart;
+
   if (chosenItem.amount > 0) {
-    console.log("upper 0");
+    // it applyes the changes of the chosen item in the cart if the amount is upper than 0
     const updatedItem = {
       ...chosenItem,
       amount: chosenItem.amount,
@@ -50,7 +57,7 @@ const removeItem = (state, action) => {
     updatedCart = [...state.cart];
     updatedCart[findIndexItem] = updatedItem;
   } else {
-    console.log("under 0");
+    // it removes the item from the cart if the amount is 0
     updatedCart = state.cart.filter((el) => el.id !== chosenItem.id);
   }
   console.log(updatedCart);

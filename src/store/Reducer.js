@@ -38,10 +38,11 @@ const removeItem = (state, action) => {
   console.log("action", action);
   const findIndexItem = state.cart.findIndex((item) => item.id === action.id);
   const chosenItem = state.cart[findIndexItem];
+  const updatedTotalAmount = state.totalAmount - chosenItem.price;
   chosenItem.amount--;
   let updatedCart;
-  if (chosenItem.amount>0) {
-    console.log('upper 0');
+  if (chosenItem.amount > 0) {
+    console.log("upper 0");
     const updatedItem = {
       ...chosenItem,
       amount: chosenItem.amount,
@@ -49,11 +50,10 @@ const removeItem = (state, action) => {
     updatedCart = [...state.cart];
     updatedCart[findIndexItem] = updatedItem;
   } else {
-    console.log('under 0');
-    updatedCart = state.cart.filter(el=>el.id !== findIndexItem); // it does't work
+    console.log("under 0");
+    updatedCart = state.cart.filter((el) => el.id !== chosenItem.id);
   }
   console.log(updatedCart);
-  const updatedTotalAmount = state.totalAmount - chosenItem.price;
   return {
     cart: updatedCart,
     totalAmount: updatedTotalAmount,

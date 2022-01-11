@@ -5,20 +5,21 @@
 .input {
   margin: 0.5rem;
   padding: 0.5rem;
+  color:black;
 }
 .buttons {
   border: none;
   cursor: pointer;
-  background-color: rgb(192, 95, 17);
+  background-color: rgb(133, 24, 22);
   margin: 1rem 0.5rem 0 0.5rem;
   padding: 0.5rem 1rem;
   width: 6rem;
 }
 .buttons:hover {
-  background-color: rgb(173, 54, 18);
+    background-color: rgb(85, 13, 13);
 }
 .error {
-  color: rgb(175, 8, 8);
+  color: rgb(245, 185, 185);
   /* padding: 0.5rem; */
   margin: 0.3rem;
   /* -webkit-box-shadow: 5px -4px 11px -3px rgba(255, 0, 0, 0.46);

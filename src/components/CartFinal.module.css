@@ -22,16 +22,6 @@
   font-size: 1rem;
   color: gray;
 }
-/* button{
-   background-color: rgb(224, 80, 22);
-   border: none;
-   cursor: pointer;
-   transition: all 0.2s ease-in;
-   padding:0.7rem 1rem;
-}
-button:hover{
-   background-color: rgb(150, 42, 9);
-} */
 
 .totalAmount {
     color:rgb(243, 240, 240);
@@ -41,12 +31,12 @@ button:hover{
   align-self: flex-start;
 }
 .remove {
-    background-color: rgb(224, 80, 22);
+  background-color: rgb(133, 24, 22);
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in;
     padding: 0.7rem 1rem;
   }
   .remove:hover {
-    background-color: rgb(150, 42, 9);
+    background-color: rgb(85, 13, 13);
   }

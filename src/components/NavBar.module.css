@@ -2,7 +2,8 @@
   display: flex;
   position: fixed;
   right: 0;
-  padding: 3vw 0;
+  top:0;
+  padding: 1vw 0;
   font-weight: 400;
   text-decoration: none;
   cursor: pointer;
@@ -20,8 +21,9 @@
 }
 
 .navContainer li:hover {
-  color: rgb(231, 139, 18);
+
 }
 .navContainer li a:hover {
-  color: rgb(231, 139, 18);
+
+  color: rgb(168, 49, 47);
 }

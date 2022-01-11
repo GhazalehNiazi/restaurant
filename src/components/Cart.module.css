@@ -63,6 +63,8 @@
   align-self: flex-start;
 }
 .order{
+    text-decoration: none;
+    border: none;
     cursor: pointer;
     background-color: rgb(150, 42, 9);
     padding:0.6rem 0.8rem;

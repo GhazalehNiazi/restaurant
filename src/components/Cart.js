@@ -32,9 +32,9 @@ const Cart = (props) => {
       </ul>
       <div className={classes.finalDetails}>
       <div className={classes.totalAmount}>total amount : ${context.totalAmount.toFixed(2)}</div>
-      <div className={classes.order}>
-        <Link to='/order' className={classes.orderText}>Order</Link>
-      </div>
+      <Link  to='/order' className={classes.order}>
+        <span className={classes.orderText}>Order</span>
+      </Link>
       </div>
     </div>
   );

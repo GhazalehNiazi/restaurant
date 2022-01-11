@@ -8,10 +8,7 @@ const Order = () => {
     <div className={classes.container}>
       <CartFinal />
       <OrderForm className={classes.inputs}></OrderForm>
-      <div>
-    <button className={classes.buttons}>cancel</button>
-    <button className={classes.buttons}>buy</button>
-    </div>
+     
     </div>
     </React.Fragment>
   );

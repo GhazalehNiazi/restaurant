@@ -40,3 +40,13 @@ button:hover{
   padding-left: inherit;
   align-self: flex-start;
 }
+.remove {
+    background-color: rgb(224, 80, 22);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    padding: 0.7rem 1rem;
+  }
+  .remove:hover {
+    background-color: rgb(150, 42, 9);
+  }

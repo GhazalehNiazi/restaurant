@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import classes from "./OrderForm.module.css";
 
 const OrderForm = (props) => {
-
   const inputName = useRef();
   const inputAddress = useRef();
   const [nameIsValid, setNameIsValid] = useState(false);
@@ -69,10 +68,7 @@ const OrderForm = (props) => {
         ></input>
       </form>
       <div>
-        <button
-          className={classes.buttons}
-        //   onClick={props.modalClickHandler}
-        >
+        <button className={classes.buttons} onClick={props.onCloseButton}>
           cancel
         </button>
         <button className={classes.buttons} onClick={buyButtonHandler}>

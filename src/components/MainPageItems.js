@@ -56,7 +56,7 @@ const MainPage = (props) => {
           >
             <Link to="/dessert" className="drinkOption">
               {" "}
-              DRINK{" "}
+              DESSERT{" "}
             </Link>
           </span>
           <span

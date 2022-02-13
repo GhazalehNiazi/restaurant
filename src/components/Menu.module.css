@@ -5,22 +5,24 @@
   font-family: "PT Serif", serif;
 }
 
-.meals{
+.meals {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
 }
 
 .container {
-    background-image: url(../image/menuBackground\ \(2\).jpg);
-    background-color: rgb(75, 74, 74);
-    /* opacity: 0.9; */
-    background-blend-mode:multiply;
-    background-attachment: scroll;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size:cover;
-    display:grid;
-    grid-template-columns: 1.8fr 5fr ;
+  /* background-image: url(../image/menuBackground\ \(2\).jpg); */
+  /* background-color: rgb(75, 74, 74); */
+  /* opacity: 0.9; */
+  background: rgb(136,51,51);
+  background: linear-gradient(0deg, rgba(136,51,51,1) 0%, rgba(237,207,196,1) 100%);
+  background-blend-mode: multiply;
+  background-attachment: scroll;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1.8fr 5fr;
 }

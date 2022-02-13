@@ -36,7 +36,7 @@ const MainPage = (props) => {
       <NavBar></NavBar>
       <div className={classes.container}>
         <div className={classes.address}>
-          <p >123 Fake Street — Seattle, WA — 206-555-7890</p>
+          <p>123 Fake Street — Seattle, WA — 206-555-7890</p>
         </div>
         <span className={classes.lists}>
           <span
@@ -54,7 +54,7 @@ const MainPage = (props) => {
             onMouseLeave={removeBackgroundChangeHandler}
             className="drinkOption"
           >
-            <Link to="/menu" className="drinkOption">
+            <Link to="/dessert" className="drinkOption">
               {" "}
               DRINK{" "}
             </Link>

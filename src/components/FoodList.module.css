@@ -1,14 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,400&family=PT+Serif:ital@1&display=swap');
-*{
-    margin:0;
-    font-family: 'PT Serif', serif;
-    color:white;
-   
-}
 .foodDetail{
-    /* display: flex;
-    flex-direction: row; */
     width:80%;
     font-size: 1.4rem;
     margin:0  3rem;
@@ -16,6 +6,10 @@
     grid-template-columns: 1.5fr 0.5fr 2fr;
     justify-content: center;
     align-items: center;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight:500;
 }
 .description{
     font-size: 0.7rem;

@@ -7,7 +7,7 @@ const CartFinal = () => {
   const contextCart = context.cart;
   return (
     <div className={classes.container}>
-      <ul>
+      <ul className={classes.items}>
         {contextCart.map((cartItem) => (
           <li key={cartItem.id} className={classes.item}>
             <div className={classes.columnOne}>

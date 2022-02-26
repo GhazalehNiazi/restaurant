@@ -1,6 +1,8 @@
 .navContainer {
   display: flex;
-  width:19%;
+  justify-content: space-evenly;
+  align-items: center;
+  width:13%;
   position: fixed;
   right: 0;
   padding: 0.8vw 0;
@@ -29,7 +31,7 @@
 }
 
 .logo{
-  width: 10%;
+  width: 15%;
 }
 .logo img{
   width:100%;

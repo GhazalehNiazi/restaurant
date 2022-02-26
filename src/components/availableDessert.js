@@ -7,28 +7,28 @@ import saltedCaramelDonut from "../image/saltedCaramelDonut.jpeg";
 
 const desserList = [
   {
-    name: "filbertDonut",
+    name: "filbert Donut",
     description: " ",
     price: 4,
     photo: filbertDonut,
     id: "filbertDonut",
   },
   {
-    name: "nutellaDonut",
+    name: "nutella Donut",
     description: " ",
     price: 5,
     photo: nutellaDonut,
     id: "nutellaDonut",
   },
   {
-    name: "phoenixDonut",
+    name: "phoenix Donut",
     description: " ",
     price: 5,
     photo: phoenixDonut,
     id: "phoenixDonut",
   },
   {
-    name: "saltedCaramelDonut",
+    name: "salted Caramel Donut",
     description: " ",
     price: 4,
     photo: saltedCaramelDonut,

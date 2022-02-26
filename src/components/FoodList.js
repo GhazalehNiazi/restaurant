@@ -21,7 +21,7 @@ const FoodList = (props) => {
   return (
     <div className={classes.foodDetail}>
       <div className={classes.columnOne}>
-        <p>{props.name}</p>
+        <p className={classes.name}>{props.name}</p>
         <p className={classes.description}>{props.description}</p>
       </div>
       <div className={classes.columnOne}>

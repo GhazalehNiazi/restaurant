@@ -1,14 +1,12 @@
 import React from "react";
 import classes from "./NavBar.module.css";
 import { Link } from "react-router-dom";
+import github from "../image/github.png";
 const NavBar = (props) => {
   return (
     <React.Fragment>
-      <nav>
+      
         <ul className={classes.navContainer}>
-          <li>
-            <Link to="/menu">Order now</Link>
-          </li>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -18,10 +16,11 @@ const NavBar = (props) => {
           <li>
             <Link to="/visit">visit</Link>
           </li>
-          <li>icon</li>
-          <li>icon</li>
+          <a className={classes.logo} href='https://github.com/GhazalehNiazi/restaurant' target='_blank'>
+            <img src={github}  alt='github'/>
+          </a>
         </ul>
-      </nav>
+    
     </React.Fragment>
   );
 };

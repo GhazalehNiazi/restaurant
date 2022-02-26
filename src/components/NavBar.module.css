@@ -1,9 +1,9 @@
 .navContainer {
   display: flex;
+  width:19%;
   position: fixed;
   right: 0;
-  top:0;
-  padding: 1vw 0;
+  padding: 0.8vw 0;
   font-weight: 400;
   text-decoration: none;
   cursor: pointer;
@@ -26,4 +26,11 @@
 .navContainer li a:hover {
 
  color: rgba(140,7,27,2);
+}
+
+.logo{
+  width: 10%;
+}
+.logo img{
+  width:100%;
 }

@@ -44,6 +44,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  color:white;
   padding: 0.7rem 1rem;
 }
 .button:hover {

@@ -9,6 +9,7 @@ input {
 .buttons {
   width: 100%;
   background-color: rgb(133, 24, 22);
+  color:white;
   border: none;
   margin: 0;
   margin-top: 6%;

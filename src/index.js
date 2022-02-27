@@ -12,7 +12,7 @@ import DessertMenu from "./components/DessertMenu";
 
 ReactDOM.render(
   <GlobalState>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="menu" element={<Menu />} />

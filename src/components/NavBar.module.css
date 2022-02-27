@@ -1,38 +1,29 @@
 .navContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  width:13%;
+  width: 22vw;
   position: fixed;
   right: 0;
-  padding: 0.8vw 0;
-  font-weight: 400;
-  text-decoration: none;
+  padding: 0.8vw ;
   cursor: pointer;
 }
 .navContainer li {
   transition: all 0.3s;
-  list-style: none;
-  padding: 0 0.7rem;
   color: black;
 }
+
 .navContainer li a {
   transition: all 0.3s;
   text-decoration: none;
   color: white;
+  font-size: 1.4vw;
 }
 
-/* .navContainer li:hover {
-
-} */
 .navContainer li a:hover {
-
- color: rgba(140,7,27,2);
+  color: rgba(140, 7, 27, 2);
 }
 
-.logo{
-  width: 15%;
-}
-.logo img{
-  width:100%;
+.logo img {
+  width: 2.5vw;
 }

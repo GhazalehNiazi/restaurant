@@ -15,7 +15,7 @@ input {
   margin-top: 6%;
   cursor: pointer;
   transition: all 0.2s ease-in;
-  padding: 0.3rem 1rem;
+  padding: 0.5vw 1vw;
 }
 .buttons:hover {
   background-color: rgb(85, 13, 13);

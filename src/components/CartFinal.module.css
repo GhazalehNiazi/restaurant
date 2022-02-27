@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: white;
-  padding: 2rem;
+  padding:2rem 2vw;
 }
 
 .item {
@@ -16,20 +16,20 @@
 }
 .name {
   color:white;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 .price{
   color:white;
 }
 .price span {
-  font-size: 1rem;
+  font-size: 1vw;
   color:white;
 }
 
 .totalAmount {
     color:white;
-    font-size: 1.4rem;
-    padding-top: 2rem;
+    font-size: 1.4vw;
+    padding-top: 2vw;
   padding-left: inherit;
   align-self: flex-start;
 }
@@ -38,7 +38,8 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in;
-    padding: 0.7rem 1rem;
+    padding: 0.7vw 1vw;
+    font-size: 1vw;
   }
   .remove:hover {
     background-color: rgb(85, 13, 13);

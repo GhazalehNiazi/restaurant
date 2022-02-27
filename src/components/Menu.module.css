@@ -11,9 +11,6 @@
 }
 
 .container {
-  /* background-image: url(../image/menuBackground\ \(2\).jpg); */
-  /* background-color: rgb(75, 74, 74); */
-  /* opacity: 0.9; */
   background: rgb(136,51,51);
   background: linear-gradient(0deg, rgba(136,51,51,1) 0%, rgba(237,207,196,1) 100%);
   background-blend-mode: multiply;

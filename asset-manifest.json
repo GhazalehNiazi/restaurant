@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/restaurant/static/css/main.e2d49b37.chunk.css",
-    "main.js": "/restaurant/static/js/main.3ecf9056.chunk.js",
-    "main.js.map": "/restaurant/static/js/main.3ecf9056.chunk.js.map",
+    "main.css": "/restaurant/static/css/main.8ecdf9f4.chunk.css",
+    "main.js": "/restaurant/static/js/main.fa61913c.chunk.js",
+    "main.js.map": "/restaurant/static/js/main.fa61913c.chunk.js.map",
     "runtime-main.js": "/restaurant/static/js/runtime-main.e1a5807c.js",
     "runtime-main.js.map": "/restaurant/static/js/runtime-main.e1a5807c.js.map",
-    "static/js/2.569c89fc.chunk.js": "/restaurant/static/js/2.569c89fc.chunk.js",
-    "static/js/2.569c89fc.chunk.js.map": "/restaurant/static/js/2.569c89fc.chunk.js.map",
+    "static/js/2.9273be8e.chunk.js": "/restaurant/static/js/2.9273be8e.chunk.js",
+    "static/js/2.9273be8e.chunk.js.map": "/restaurant/static/js/2.9273be8e.chunk.js.map",
     "index.html": "/restaurant/index.html",
-    "static/css/main.e2d49b37.chunk.css.map": "/restaurant/static/css/main.e2d49b37.chunk.css.map",
-    "static/js/2.569c89fc.chunk.js.LICENSE.txt": "/restaurant/static/js/2.569c89fc.chunk.js.LICENSE.txt",
+    "static/css/main.8ecdf9f4.chunk.css.map": "/restaurant/static/css/main.8ecdf9f4.chunk.css.map",
+    "static/js/2.9273be8e.chunk.js.LICENSE.txt": "/restaurant/static/js/2.9273be8e.chunk.js.LICENSE.txt",
     "static/media/baba-ghanoush-normal.c823f2a3.jpg": "/restaurant/static/media/baba-ghanoush-normal.c823f2a3.jpg",
     "static/media/beef-shawarma-sandwich-roll-normal.c3b9d888.jpg": "/restaurant/static/media/beef-shawarma-sandwich-roll-normal.c3b9d888.jpg",
     "static/media/MainPageItems.module.css": "/restaurant/static/media/visitPicture.afd3776f.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e1a5807c.js",
-    "static/js/2.569c89fc.chunk.js",
-    "static/css/main.e2d49b37.chunk.css",
-    "static/js/main.3ecf9056.chunk.js"
+    "static/js/2.9273be8e.chunk.js",
+    "static/css/main.8ecdf9f4.chunk.css",
+    "static/js/main.fa61913c.chunk.js"
   ]
 }

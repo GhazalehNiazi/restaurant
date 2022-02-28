@@ -5,19 +5,15 @@
   width: 22vw;
   position: fixed;
   right: 0;
-  padding: 0.8vw ;
+  padding: 0.7vh 0.8vw 0 0;
   cursor: pointer;
-}
-.navContainer li {
-  transition: all 0.3s;
-  color: black;
 }
 
 .navContainer li a {
   transition: all 0.3s;
   text-decoration: none;
   color: white;
-  font-size: 1.4vw;
+  font-size: calc(0.4vw + 15px);
 }
 
 .navContainer li a:hover {
@@ -25,5 +21,15 @@
 }
 
 .logo img {
-  width: 2.5vw;
+  width: calc(10px + 1.5vw);
+}
+
+@media screen and (max-width: 628px) {
+  .navContainer {
+    width: calc(50px + 22vw);
+  }
+  .navContainer li a {
+    font-size: calc(1.1vw + 13px);
+    margin: 1vw;
+  }
 }

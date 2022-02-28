@@ -1,36 +1,54 @@
-.foodDetail{
-    width:80%;
-    font-size: 1.4vw;
-    margin:0  3rvw;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 0.5fr;
-    justify-content: center;
-    align-items: center;
+.foodDetail {
+  width: 80%;
+  font-size: 1.4vw;
+  margin: 0 0;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  justify-content: center;
+  align-items: center;
 }
-.name{
-    font-size: 1.2vw;
-    font-weight:500;
+.name {
+  font-size: calc(1vw + 8px);
+  font-weight: 500;
 }
-.description{
-    font-size: 0.7vw;
-}
-
-.columnOne{
-    align-items: flex-start;
-    justify-content: flex-start;
-   margin: auto;
-
-}
-.columnTwo{
-    margin: auto;
+.description {
+  font-size: 1.2vw;
 }
 
-.img{
-    width:10vw;
-    margin:auto;
-
+.columnOne {
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
 }
-.img img{
-    width:10vw;
-    height:10vw;
+.columnTwo {
+  margin: auto;
+}
+
+.img {
+  width: 10vw;
+  margin: auto;
+}
+.img img {
+  width: 10vw;
+  height: 10vw;
+}
+@media (min-width: 712px) and (max-width: 758px) {
+  .description {
+    font-size: 0.5vw;
+  }
+}
+@media screen and (max-width: 770px) {
+  .description {
+    font-size: 0.5vw;
+  }
+  .columnOne {
+    margin: 1.5rem 1rem;
+  }
+  .img {
+    width: 100%;
+  }
+  .img img {
+    width: 15vw;
+    height: 15vw;
+  }
 }

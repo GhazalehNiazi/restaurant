@@ -11,8 +11,12 @@
 }
 
 .container {
-  background: rgb(136,51,51);
-  background: linear-gradient(0deg, rgba(136,51,51,1) 0%, rgba(237,207,196,1) 100%);
+  background: rgb(136, 51, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(136, 51, 51, 1) 0%,
+    rgba(237, 207, 196, 1) 100%
+  );
   background-blend-mode: multiply;
   background-attachment: scroll;
   width: 100vw;
@@ -21,5 +25,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1.8fr 5fr;
+  grid-template-columns: 2fr 5fr;
+}
+
+@media screen and (max-width: 770px) {
+  .meals {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem 0rem;
+    height: min-content;
+  }
+}
+@media screen and (max-width: 428px) {
+  .container {
+    height: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }

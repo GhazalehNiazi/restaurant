@@ -1,4 +1,3 @@
-
 .MainPage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,17 +17,19 @@
   align-items: center;
   justify-content: center;
   color: rgb(252, 252, 252);
+
   transition: all 0.3s ease-in;
 }
 .lists {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 5vw;
+  font-size: calc(4.7vw + 15px);
 }
 .address p {
-  width:100%;
-  font-size: 1vw;
+  width: 100%;
+  font-size: calc(1.5vw + 8px);
+
   color: rgb(255, 255, 210);
 }
 span a {
@@ -80,4 +81,19 @@ span a:hover {
   opacity: 0.95;
   transition: all 0.3s ease;
   -moz-transition: all 2s ease;
+}
+
+@media screen and (max-width: 628px) {
+  .address p {
+    min-height: min-content;
+    min-width: min-content;
+  }
+  .container {
+    margin-top: 5vh;
+  }
+  .lists {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35rem;
+  }
 }

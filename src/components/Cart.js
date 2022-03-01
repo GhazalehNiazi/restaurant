@@ -27,7 +27,7 @@ const Cart = (props) => {
                 <div className={classes.name}>{cartItem.name}</div>
                 <div className={classes.price}>
                   ${cartItem.price * cartItem.amount}{" "}
-                  <span>({cartItem.amount})</span>
+                  <span >({cartItem.amount})</span>
                 </div>
               </div>
               <div className={classes.columnTwo}>

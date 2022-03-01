@@ -1,5 +1,5 @@
 .foodDetail {
-  width: 80%;
+  width: 90%;
   font-size: 1.4vw;
   margin: 0 0;
   display: grid;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 .name {
-  font-size: calc(1vw + 8px);
+  font-size: calc(1.2vw + 8px);
   font-weight: 500;
 }
 .description {
@@ -34,21 +34,64 @@
 }
 @media (min-width: 712px) and (max-width: 758px) {
   .description {
-    font-size: 0.5vw;
+    font-size: 1vw;
   }
 }
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1370px) {
+  .foodDetail {
+    margin-bottom: 2rem;
+  }
   .description {
-    font-size: 0.5vw;
+    font-size: 2.3vw;
   }
   .columnOne {
     margin: 1.5rem 1rem;
+  }
+  .columnTwo {
+    width: 50%;
   }
   .img {
     width: 100%;
   }
   .img img {
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
+  }
+}
+@media screen and (max-width: 430px) {
+  .img {
+    grid-area: header;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .img img {
+    width: 39vw;
+    height: 35vw;
+  }
+  .columnOne {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-area: main;
+  }
+  .columnTwo {
+    grid-area: add;
+  }
+  .foodDetail {
+    width: 100%;
+    margin-bottom: 1rem;
+    grid-template-columns: 2.2fr 3fr 1.5fr 0.7fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". .  header . "
+      "main main add add";
+  }
+  .name {
+    display: inline-block;
+    font-size: calc(1.3vw + 10px);
+  }
+  .description {
+    display: inline-block;
+    font-size: 1.5vw;
   }
 }

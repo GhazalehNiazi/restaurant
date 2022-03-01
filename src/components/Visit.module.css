@@ -18,11 +18,12 @@
 .input {
   margin: 0.5rem;
   padding: 0.8rem;
+  width: 100%;
 }
 .label {
   /* padding:1rem;
      */
-  font-size: 1.5rem;
+  font-size: calc(1.5vw + 10px);
   margin: 0.5rem 0 0.2rem 0;
 }
 .buttons {
@@ -33,8 +34,8 @@
   justify-content: center;
 }
 .button {
-    color:black;
-    font-size: 1rem;
+  color: black;
+  font-size: 1rem;
   /* text-decoration: none; */
   border: none;
   cursor: pointer;
@@ -44,4 +45,29 @@
 }
 .button:hover {
   background-color: rgb(150, 136, 136);
+}
+@media screen and (max-width: 932px) {
+  .form {
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .buttons {
+    margin: 0.2rem;
+  }
+  .button{
+    padding: 0.8rem 1rem;
+    margin: 0 0.5rem;
+  }
+}
+@media screen and (max-width:428PX){
+  .buttons{
+    display: grid;
+    grid-template-rows: '1fr';
+  }
+  .button{
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0.5rem;
+  }
 }

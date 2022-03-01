@@ -24,7 +24,7 @@ const FoodList = (props) => {
         <p className={classes.name}>{props.name}</p>
         <p className={classes.description}>{props.description}</p>
       </div>
-      <div className={classes.columnOne}>
+      <div className={classes.columnTwo}>
         <div>{price}</div>
         <div>
           <FoodListForm id={props.id} onAddToCart={addToCartHandler}></FoodListForm>

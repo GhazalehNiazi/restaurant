@@ -22,7 +22,7 @@
 }
 .columnOne {
   width: 100%;
-  padding-right: 6vw;
+  padding-right: 2vw;
   flex-grow: 3;
   flex-shrink: 3;
 }
@@ -34,8 +34,11 @@
   flex-shrink: 3;
 }
 .price span {
+  font-size: 1vw;
+  color: rgb(221, 217, 217);
+}
+.price{
   font-size: 1.2vw;
-  color: rgb(209, 207, 207);
 }
 .button {
   background-color: rgb(133, 24, 22);
@@ -43,7 +46,9 @@
   cursor: pointer;
   transition: all 0.2s ease-in;
   color: white;
-  padding: 0.7vw 0.5vw;
+  padding: 0.7vw 1.1vw;
+  position: relative;
+  right: 0;
 }
 .button:hover {
   background-color: rgb(85, 13, 13);
@@ -58,7 +63,7 @@
 
 .totalAmount {
   color: rgb(243, 240, 240);
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   padding-top: 2vw;
   padding-left: inherit;
   align-self: flex-start;
@@ -68,7 +73,7 @@
   border: none;
   cursor: pointer;
   background-color: rgb(133, 24, 22);
-  padding: 0.6vw 0.8vw;
+  padding: 0.6vw 1vw;
   align-self: center;
   display: flex;
   margin-top: 1rem;
@@ -83,7 +88,38 @@
   text-decoration: none;
   color: white;
 }
-@media screen and (max-width: 428px) {
+@media screen and (max-width:1484){
+  .button{
+    padding: 0.7vw calc(0.2vw - 5px);
+  }
+}
+@media screen and (max-width: 1628px){
+  .name{
+    grid-area: 'name';
+    font-size: calc(1.5vw6+ 4px);
+    
+  }
+  .price{
+    grid-area: 'price';
+    margin-bottom: 0.5rem;
+    font-size: 1.8vw;
+  }
+  .columnTwo{
+    grid-area: 'button';
+    /* margin: 1rem; */
+  }
+  .item{
+   display: grid;
+   grid-template-rows: 1fr 1fr ;
+   grid-column: auto;
+   /* grid-template-rows: auto; */
+   grid-template-areas: 'name '
+   'price'
+   'card';
+  }
+}
+
+@media screen and (max-width: 760px) {
   .container {
     width: 100%;
     height: max-content;

@@ -96,7 +96,7 @@
 @media screen and (max-width: 1628px){
   .name{
     grid-area: 'name';
-    font-size: calc(1.5vw6+ 4px);
+    font-size: calc(1.5vw+ 4px);
     
   }
   .price{

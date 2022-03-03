@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import classes from "./FoodListForm.module.css";
-
+// its a component for the foodlist component and it let us to choose how many of each item we will order
 const FoodItemForm = (props) => {
     const [amountIsValid, setAmountIsValid] = useState(true);
     const amountInputRef = useRef();

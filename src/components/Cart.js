@@ -2,15 +2,17 @@ import React, { useContext, useState } from "react";
 import CartContext from "../store/cart-context";
 import classes from "./Cart.module.css";
 import Order from "./Order";
-
+// this componet is shown in side/bottom of the menu
 const Cart = (props) => {
   const context = useContext(CartContext);
   const contextCart = context.cart;
-  const [showOrder, setShowOrder] = useState(false);
 
+  const [showOrder, setShowOrder] = useState(false);
+  // if the order button got clicked then the order portal will be shown
   const orderHandler = () => {
     setShowOrder(true);
   };
+  // if the close button in the order portal got clicked then the portal will be closed
   const closeOrderHandler = () => {
     console.log("closeOrderHandler");
     setShowOrder(false);
@@ -27,7 +29,7 @@ const Cart = (props) => {
                 <div className={classes.name}>{cartItem.name}</div>
                 <div className={classes.price}>
                   ${cartItem.price * cartItem.amount}{" "}
-                  <span >({cartItem.amount})</span>
+                  <span>({cartItem.amount})</span>
                 </div>
               </div>
               <div className={classes.columnTwo}>

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import FoodListForm from "./FoodListForm";
 import classes from "./FoodList.module.css";
 import CartContext from "../store/cart-context";
-
+// this component is used in the menu component and it shows all the foods/desserts in the menu.
 const FoodList = (props) => {
   const cartCtx = useContext(CartContext);
   const price = `$${props.price.toFixed(2)}`;

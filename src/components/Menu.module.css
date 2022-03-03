@@ -28,7 +28,7 @@
   grid-template-columns: 2fr 5fr;
 }
 
-@media screen and (max-width: 1370px) {
+@media  (max-width: 914px) {
   .meals {
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
     height: min-content;
   }
 }
-@media screen and (max-width: 775px) {
+@media (max-width: 775px) {
   .container {
     height: max-content;
     display: flex;

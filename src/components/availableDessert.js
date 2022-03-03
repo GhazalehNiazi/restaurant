@@ -4,7 +4,7 @@ import filbertDonut from "../image/filbertDonut.jpeg";
 import nutellaDonut from "../image/nutellaDonut.jpeg";
 import phoenixDonut from "../image/phoenixDonut.jpeg";
 import saltedCaramelDonut from "../image/saltedCaramelDonut.jpeg";
-
+// this is an array of list of all desserts for dessert menu
 const desserList = [
   {
     name: "filbert Donut",

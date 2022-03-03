@@ -4,7 +4,7 @@ import tabboulehSalad from "../image/tabbouleh-salad-normal.jpg";
 import fafafel from "../image/falafel-roll-normal.jpg";
 import fattoush from "../image/fattoush-normal.jpg";
 import beefRoll from "../image/beef-shawarma-sandwich-roll-normal.jpg";
-
+// this is an array of list of all foods for food menu
 const foodList = [
  {
     name: "MUTABLE",

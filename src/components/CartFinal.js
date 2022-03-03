@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import CartContext from "../store/cart-context";
 import classes from "./CartFinal.module.css";
-
+// this components will be shown when the order button in the menu get clicked
 const CartFinal = () => {
   const context = useContext(CartContext);
   const contextCart = context.cart;

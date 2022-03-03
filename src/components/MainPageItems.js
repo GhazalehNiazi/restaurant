@@ -6,7 +6,7 @@ const MainPage = (props) => {
   const [foodBackground, setFoodBackground] = useState(false);
   const [drinkBackground, setDrinkBackground] = useState(false);
   const [visitBackground, setVisitBackground] = useState(false);
-
+// by hovering the lists different backgrounds will be shown.
   const addBackgroundChangeHandler = (e) => {
     if (e.target.className === "foodOption") {
       setFoodBackground(true);
@@ -22,7 +22,7 @@ const MainPage = (props) => {
     setDrinkBackground(false);
     setVisitBackground(false);
   };
-
+// toggling the class name for showing the background
   let backroundClassName = foodBackground
     ? classes.foodActive
     : drinkBackground
